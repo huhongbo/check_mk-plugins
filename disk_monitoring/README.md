@@ -31,8 +31,10 @@ This script is based on S.M.A.R.T. (Self-Monitoring, Analysis, and Reporting Tec
 Install instructions
 --------------------
 Run this command on all check_mk client server which can setup the client side check_mk mrpe.cfg checks for disks.
+
 ```bash
 # wget -q -O - https://raw.github.com/ravibhure/check_mk-plugins/master/disk_monitoring/install_disk_check.sh | bash
 ```bash
-This script will download 'check_disk_health.sh' & 'check_disk_temp.sh' on target client server and update the mrpe.cfg file.
+
+This script will download check_disk_health.sh & check_disk_temp.sh on target client server and update the mrpe.cfg file.
 For nagios server side setup, one should need to take mrpe reinventory of these servers and setup the check_mk base file to keep delay of 10min for these specific checks.
