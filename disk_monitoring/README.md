@@ -8,7 +8,7 @@ Place me in /usr/lib/check_mk_agent/plugins on the client
 This script is based on S.M.A.R.T. (Self-Monitoring, Analysis, and Reporting Technology)
 
 Probably the most interesting values here are these lines:
-```bash
+```
 # Code: https://technutopia.com/forum/showthread.php?t=1266
 # ==================================================================================================
 # ID# ATTRIBUTE_NAME          FLAG   VALUE WORST THRESH    TYPE    UPDATED  WHEN_FAILED RAW_VALUE  |
@@ -19,8 +19,7 @@ Probably the most interesting values here are these lines:
 # The Reallocated_Sector_Ct attribute shows the number of reallocated sectors on the disk. That means, number of bad sectors that have been <fixed> by
 # allocating a spare sector and using that instead of the damaged one.
 # Current_Pending_Sectors and Offline_Uncorrectable attributes indicates the number of sectors that are unreadable but the disk firmware has not replaced #them yet with  the spare sectors because its possible that the data becomes readable later or the data gets overwritten. If any of the latter cases #happends, the disk firmware will replace the damaged sectors with the spare sectors.
-
-```bash
+```
 
 check_disk_temp.sh
 ------------------
