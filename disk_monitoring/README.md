@@ -16,9 +16,10 @@ Probably the most interesting values here are these lines:
 # 197 Current_Pending_Sector  0x0012   100   100   000    Old_age   Always       -       0         |
 # 198 Offline_Uncorrectable   0x0010   100   100   000    Old_age   Offline      -       0         |
 # ==================================================================================================
-# The Reallocated_Sector_Ct attribute shows the number of reallocated sectors on the disk. That means, number of bad sectors that have been "fixed" by
+# The Reallocated_Sector_Ct attribute shows the number of reallocated sectors on the disk. That means, number of bad sectors that have been <fixed> by
 # allocating a spare sector and using that instead of the damaged one.
-# Current_Pending_Sectors and Offline_Uncorrectable attributes indicates the number of sectors that are unreadable but the disk firmware has not replaced #them yet with  the spare sectors because it's possible that the data becomes readable later or the data gets overwritten. If any of the latter cases #happends, the disk firmware will replace the damaged sectors with the spare sectors.
+# Current_Pending_Sectors and Offline_Uncorrectable attributes indicates the number of sectors that are unreadable but the disk firmware has not replaced #them yet with  the spare sectors because its possible that the data becomes readable later or the data gets overwritten. If any of the latter cases #happends, the disk firmware will replace the damaged sectors with the spare sectors.
+
 ```bash
 
 check_disk_temp.sh
