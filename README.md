@@ -13,3 +13,8 @@ Local checks
 ------------
 These are installed on the client server, (e.g. /usr/lib/check_mk_agent/local). They have
 no server-side part, and handle all the logic needed to perform the check themselves.
+
+Plugins checks
+--------------
+These are installed on the client server, (e.g. /usr/lib/check_mk_agent/plugins). They have
+no server-side part, and handle all the logic needed to perform the check themselves.
